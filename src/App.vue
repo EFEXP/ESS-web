@@ -2,8 +2,9 @@
 v-app()#app
   Toolbar
   v-content
+    transition(name="fade")
       router-view
-  v-footer().pa-3
+  v-footer()
     v-layout(row wrap justify-center) 
       v-flex(xs12 py-3 text-xs-center) &copy;{{ new Date().getFullYear() }} — TUS English Speaking Society 
     
@@ -50,7 +51,12 @@ export default {
   color: rgba(0, 0, 0, 0.87);
 }
 
-
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to  {
+  opacity: 0;
+}
 input,textarea{
   ::selection,::-moz-selection,::-webkit-selection {
       background-color: rgba(100, 100, 100, 0.4);
