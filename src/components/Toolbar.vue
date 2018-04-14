@@ -1,5 +1,5 @@
 <template lang="pug">
- v-toolbar(app)
+ v-toolbar(app).primary
   v-menu(bottom left) 
     v-toolbar-side-icon(slot="activator")
     v-list
@@ -12,8 +12,13 @@
     v-btn(flat @click="goToQandA") Q&amp;A
     v-btn(flat @click="goToContact") Contact
   v-spacer
-  v-toolbar-items  
+  v-btn(icon onclick="window.open('https://twitter.com/tusshinkan2018')")
+    v-icon(size="24px") fab fa-twitter
+  v-btn(icon  onclick="window.open('https://twitter.com/tusshinkan2018')")
+    v-icon(size="24px") fab fa-instagram  
+  v-toolbar-items.hidden-sm-and-down  
     v-btn(flat @click="goToForMember") for Members
+    
 </template>
 <script>
 export default {

@@ -8,7 +8,15 @@ import About from './components/AboutUsPage.vue'
 import Contact from './components/ContactUsPage.vue'
 import ForMember from './components/ForMemberPage.vue'
 import Question from './components/QandAPage.vue'
-Vue.use(Vuetify)
+import Foreigner from './components/ForVisitors.vue'
+import colors from 'vuetify/es5/util/colors'
+Vue.use(Vuetify,{
+  theme: {
+    primary:"#FF9800",
+    secondary:"#FFE0B2",
+    accent: "#FF5252"
+  }
+})
 Vue.use(VueRouter)
 Vue.config.productionTip = true
 
@@ -18,6 +26,7 @@ const routes = [
   { path: '/about', component:About },
   { path: '/contact', component:Contact },
   { path: '/question', component:Question},
+  { path: '/WelcomeToJapan', component:Foreigner},
   { path: '*', component:Home }
 ]
 

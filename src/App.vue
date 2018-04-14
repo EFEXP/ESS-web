@@ -1,27 +1,34 @@
 <template lang="pug">
 v-app()#app
-  Toolbar
-  v-content
-    transition(name="fade")
-      router-view
-  v-footer()
-    v-layout(row wrap justify-center) 
-      v-flex(xs12 py-3 text-xs-center) &copy;{{ new Date().getFullYear() }} — TUS English Speaking Society 
+  Toolbar 
+  v-content(v-scroll="onScroll")
+    v-container(fluid)#margin-zero
+      transition(name="fade")
+        router-view
+  Footer
+  
     
    
 </template>
-
-
 <script>
 import Toolbar from "./components/Toolbar.vue";
-
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "app",
   components: {
-    Toolbar
+    Toolbar,
+    Footer
 
-  }
+  },
+   data: () => ({
+      offsetTop: 0
+    }),
+    methods: {
+      onScroll (e) {
+        this.offsetTop = window.pageYOffset || document.documentElement.scrollTop
+      }
+    }
 };
 </script>
 
@@ -33,8 +40,11 @@ export default {
     line-height: 1.8;
     font-size: 16px;
     letter-spacing: .05em;
-  color: #323232;
-  text-align: center;
+    color: #323232;
+    text-align: center;
+}
+Footer{
+  padding-top: 0px;
 }
 ::-webkit-selection {
   background-color: #CCE2FF;
@@ -60,7 +70,7 @@ export default {
 input,textarea{
   ::selection,::-moz-selection,::-webkit-selection {
       background-color: rgba(100, 100, 100, 0.4);
-  color: rgba(0, 0, 0, 0.87);
+      color: rgba(0, 0, 0, 0.87);
   }
 }
 .page-title{
@@ -71,7 +81,7 @@ input,textarea{
   margin-top: 10px;
 }
 .page-headline{
-   color: #ff9c00;
+   margin-top: 10px;
 }
 @media only screen and (min-width: 1200px) {
 .text-container{
@@ -90,7 +100,7 @@ input,textarea{
   }
 }
 @media only screen and (max-width: 767px) {
-  .ui.container {
+  .text-container {
     width: auto !important;
     margin-left: 1em !important;
       max-width: 100% !important;
@@ -99,13 +109,16 @@ input,textarea{
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .ui.container {
+  .text-container {
     width: 723px;
       max-width: 100% !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 }
-
+#margin-zero{
+  margin: 0%;
+  padding: 0%;
+}
 
 </style>

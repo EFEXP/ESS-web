@@ -1,8 +1,7 @@
 <template lang="pug">
 div
   Hero(title="About ESS" url="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" subtitle="私達の活動を紹介します")
-  v-container()
-     v-layout(align-center column).text-container
+  v-layout(align-center column).text-container
       v-flex(text-xs-center)
         p.headline.page-headline どういう団体なの？
         p.body-2 私たちは、東京理科大学の公認団体、野田文化局に属する「英語研究会」通称『ＥＳＳ(English Speaking Society)』です。
@@ -20,7 +19,7 @@ div
         p.body-2 ディベートとは、ある論題について肯定側、否定側に分かれ、それぞれのチームが、自分達の立場の正当性を競って、議論するというものです。
         p.body-2 ちゃんとジャッジもいて、ディベート終了後に、どちらのチームの正当性が高かったか、どちらの主張に説得力があったかによって勝敗を決します！
         p.body-2 ディベートをする事によって、英語力はもちろん、ジャッジを説得するための論理的な思考力が養われます。
-        p.title.section-titleSpeech
+        p.title.section-title Speech
         p.body-2 週2回、火・木にK404で活動しています。speechとありますが、speechの勉強だけでなく英語力向上のためにTOEICの勉強などもしています。勉強というと身構えてしまう人も多いですが、活動自体はゆる～く行っているので誰でも簡単に自分の英語力を磨くことができるかも！？
         p.body-2 また、私たちＥＳＳでは、毎年11月に「野田市長杯・東京理科大学学長杯争奪英語弁論大会」というスピーチの大会を主催しています。昨年度でこのスピーチコンテストも第27回を迎えました。
         p.body-2 この大会の前身は1969年から始まった理科大部員同士によるE.S.S.杯英語弁論大会ですが、その後1977年にオープン化し、名称も東京理科大学理工学部長杯、東京理科大学学長杯争奪英語弁論大会と変わり、さらに1985年には野田市長杯を頂きました.
@@ -52,7 +51,8 @@ export default {
 .section-title{
   padding-top: 24px; 
   font-family:  'Montserrat', sans-serif;
- color: #ff9c00;
+  color: #ff9c00;
 }
+
 
 </style>
