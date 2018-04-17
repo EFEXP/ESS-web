@@ -1,5 +1,5 @@
 <template lang="pug">
-<img src="https://tse2.mm.bing.net/th?id=OIP.jbamy4YpAIViAqkOJ8D-VgHaCV&pid=15.1"/>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNJegyY35lKYpPsTNyYl5LLa5Td2xoooBfqTqyXXA8VCJsXQ/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
 </template>
 <script>
 export default {
