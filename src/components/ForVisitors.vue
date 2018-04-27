@@ -5,12 +5,16 @@ div
   v-container(fluid).text-container
 
   p.headline Welcome to Japan 😆
-  p.title Who are you ?
-  p.body-2 We are English Speaking Society(ESS).
-  p.body-2 Example
-  p.title Did you see us ?
+  p.body-2 We are English speaking society(ESS) of Tokyo University of Science(東京理科大学).
+  p.title.primary--text What are you doing ?
   p.body-2 Thank you for your interest. 
-  p.body-2 Example 
+  p.body-2 It's a GUIDE activity, one of our activities to improve our English skills.
+  p.body-2 We would like to guide English speakers aroud Japanese famous sight seeing spots, Asakusa,Imperial Palace(Koukyo) ,Meiji Shrine(Meiji jingu)
+  p.title.primary--text  Is this free or not ?
+  span.body-2  Absolutely free, We do this activity as just volunteer.
+  p.title.primary--text Do you want to go with us ?
+  p.body-2 If you see us in the street ,please tell us.
+   p.headline Have a good trip ✈️
 </template>
 <script>
 import Hero from '../components/PageHero.vue'
@@ -23,5 +27,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
+.title{
+  padding-top: 10px;
+}
+.body-2{
+  padding-right: 15px;
+  padding-left: 15px;
+}
 </style>

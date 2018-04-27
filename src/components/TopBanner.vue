@@ -11,7 +11,7 @@
           |東 京 理 科 大 学 
           span
           | 英 語 研 究 会 
-        v-btn.primary.primary--text(large outline to="WelcomeToJapan") For visitors to Japan
+        v-btn.primary.primary--text(large outline to="WelcomeToJapan") For English speaker
 </template>
 <script>
 
