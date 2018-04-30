@@ -51,7 +51,7 @@ export default {
         {
           name: "DRAMA",
           url: "",
-          picUrl: "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/11/3/1415026979560/Year-11-drama-class-rehea-014.jpg?w=700&q=55&auto=format&usm=12&fit=max&s=a164192d1aee2f7e09443d46dac79337",
+          picUrl: "http://www.thedailymash.co.uk/images/stories/forest425-1.jpg",
           description:
             "その名の通り演劇の活動です。後期に部全体で協力し、11月末の大学の文化祭に向けての練習に励みます。主役級につくのは新入生が主ですが、仕事は役者以外にも衣装や小道具などの裏方もあり、それに精を出す人も沢山います。"
         }
