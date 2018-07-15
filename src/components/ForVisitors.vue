@@ -1,16 +1,18 @@
 <template lang="pug">
 div
-  Hero(title="About Us" url="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" subtitle="For Visitors to Japan")
+  Hero(title="About Us" url="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" subtitle="For visitors to Japan")
   v-container(fluid).text-container
-  p.headline Welcome to Japan 😆
-  p.body-2 We are English speaking society(ESS) of Tokyo University of Science(東京理科大学).
-  p.title.primary--text What are you doing ?
-  p.body-2 Thank you for your interest. 
-  p.body-2 It's one of our activities to improve our English skills.
-  p.body-2 We guide English speakers aroud Japanese famous sight seeing spots, Asakusa, Imperial Palace(Koukyo), Meiji Shrine(Meiji jingu)
-  p.title.primary--text  Free or not ?
-  span.body-2  Absolutely free.
-  p.headline Have a good trip ✈️
+  p.headline  Welcome to Japan !! 
+  p.body-2 Thank you for your interest😉.
+  p.body-2 We are English speaking society(ESS) in Tokyo University of Science(東京理科大学).
+  p.body-2 Through English communication, we enjoy talking in English. 
+  p.title.primary--text Our Activity
+  p.body-2 For English speakers, now we carry out GUIDE activity at Asakusa(浅草), Imperial Palace(皇居) or Meiji Shrine(明治神宮) several times a month.
+  p.body-2 We enjoy communicating with you while showing you aroud famous spots.
+  p.body-2 To Get Latest Information Check Out Our SNS Accounts 👍
+  p.title.primary--text  Free or not ? 
+  span.body-2  Absolutely free ✅
+  p.headline#Trip Have A Good Trip ✈️
 </template>
 <script>
 import Hero from '../components/PageHero.vue'
@@ -23,11 +25,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.title{
-  padding-top: 10px;
-}
 .body-2{
   padding-right: 15px;
   padding-left: 15px;
+}
+#Trip{
+   padding-top: 30px;
 }
 </style>

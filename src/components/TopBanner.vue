@@ -2,7 +2,7 @@
   div#jumbotron-top
      div#banner-container
         h3.display-3.white--text#our-name 
-          | English 
+          |English 
           span
           |Speaking 
           span
