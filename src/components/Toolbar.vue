@@ -5,12 +5,15 @@
     v-list
       v-list-tile(v-for="item in items" :key="item.title" @click="menuClicked(item)")
         v-list-tile-title {{ item.title }}
-  v-toolbar-title
+  v-toolbar-titled
     span(@click="goHome" ) NODA ESS
   v-toolbar-items.hidden-sm-and-down
     v-btn(flat @click="goToAbout") About
+      v-icon.right info
     v-btn(flat @click="goToQandA") Q&amp;A
+      v-icon.right question_answer
     v-btn(flat @click="goToContact") Contact
+      v-icon.right contact_support
   v-spacer
   v-btn(icon onclick="window.open('https://twitter.com/tusnodaess')")
     v-icon(size="24px") fab fa-twitter
@@ -73,5 +76,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
+.right{
+  padding-left: 8px
+}
 </style>

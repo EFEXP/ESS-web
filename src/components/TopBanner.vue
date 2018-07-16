@@ -12,6 +12,7 @@
           span
           | 英 語 研 究 会 
         v-btn.primary.primary--text(large outline to="WelcomeToJapan") For English speakers
+           v-icon.right card_travel
 </template>
 <script>
 
