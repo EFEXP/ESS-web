@@ -1,10 +1,11 @@
 <template lang="pug">
  v-toolbar(app).primary
   v-menu(bottom left) 
-    v-toolbar-side-icon(slot="activator")
+    v-toolbar-side-icon.hidden-md-and-up(slot="activator")
     v-list
       v-list-tile(v-for="item in items" :key="item.title" @click="menuClicked(item)")
         v-list-tile-title {{ item.title }}
+        v-icon {{item.icon}}
   v-toolbar-titled
     span(@click="goHome" ) NODA ESS
   v-toolbar-items.hidden-sm-and-down
@@ -29,10 +30,10 @@ export default {
   components: {},
   data: () => ({
     items: [
-      { title: "ABOUT" },
-      { title: "CONTACT" },
-      { title: "Q & A" },
-      { title: "FOR MEMBERS" }
+      { title: "ABOUT" ,icon:"info"},
+      { title: "CONTACT",icon:"contact_support" },
+      { title: "Q & A",icon:"question_answer" },
+      { title: "FOR MEMBERS",icon:"" }
     ]
   }),
   methods: {
@@ -52,7 +53,6 @@ export default {
       this.$router.push("formember");
     },
     menuClicked: function(it) {
-      console.log(it);
       switch (it["title"]) {
         case "ABOUT": {
           this.goToAbout();

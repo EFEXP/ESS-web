@@ -9,7 +9,6 @@ import Contact from './components/ContactUsPage.vue'
 import ForMember from './components/ForMemberPage.vue'
 import Question from './components/QandAPage.vue'
 import Foreigner from './components/ForVisitors.vue'
-import colors from 'vuetify/es5/util/colors'
 Vue.use(Vuetify,{
   theme: {
     primary:"#FF9800",
