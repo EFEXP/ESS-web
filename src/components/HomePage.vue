@@ -5,10 +5,10 @@ div
     h3.display-2 SECTIONS
     v-layout(row wrap)
       v-flex(lg1 xs0 )
-      v-flex(lg2 xs12 v-for="it of items" :key="it['name']")#section
-        v-card.section-card
-          v-card-media(:src="it['picUrl']" height="200px")
-          v-card-title(primary-title).headline.mb-0 {{it['name']}}
+      v-flex(lg2 xs12 v-for="it of items" :key="it.name" v-on:click="goToAbout")#section
+        v-card.section-card()
+          v-card-media(:src="it.picUrl" height="200px" )
+          v-card-title(primary-title).headline.mb-0 {{it.name}}
 </template>
 <script>
 import TopBanner from "../components/TopBanner.vue";
@@ -17,8 +17,7 @@ export default {
   components: {
     TopBanner
   },
-  data: () => {
-    return {
+  data: () => ({
       items: [
         {
           name: "DISCUSSION",
@@ -56,8 +55,11 @@ export default {
             "その名の通り演劇の活動です。後期に部全体で協力し、11月末の理大祭に向けての練習に励みます。主役級につくのは新入生が主ですが、仕事は役者以外にも衣装や小道具などの裏方もあり、それに精を出す人も沢山います。"
         }
       ]
-    };
-  }
+  }),
+      methods: {
+    goToAbout: function() {
+      this.$router.push("about");
+    }},
 };
 </script>
 <style lang="scss" scoped>

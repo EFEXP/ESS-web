@@ -5,8 +5,8 @@
     v-list
       v-list-tile(v-for="item in items" :key="item.title" @click="menuClicked(item)")
         v-list-tile-title {{ item.title }}
-        v-icon {{item.icon}}
-  v-toolbar-titled
+        v-icon {{ item.icon }}
+  v-toolbar-titleds
     span(@click="goHome" ) NODA ESS
   v-toolbar-items.hidden-sm-and-down
     v-btn(flat @click="goToAbout") About
@@ -22,6 +22,7 @@
     v-icon(size="24px") fab fa-instagram  
   v-toolbar-items.hidden-sm-and-down  
     v-btn(flat @click="goToForMember") for Members
+      v-icon(size="24px") group 
     
 </template>
 <script>
@@ -30,10 +31,10 @@ export default {
   components: {},
   data: () => ({
     items: [
-      { title: "ABOUT" ,icon:"info"},
-      { title: "CONTACT",icon:"contact_support" },
+      { title: "ABOUT",icon:"info" },
       { title: "Q & A",icon:"question_answer" },
-      { title: "FOR MEMBERS",icon:"" }
+      { title: "CONTACT",icon:"contact_support" },
+      { title: "FOR MEMBERS",icon:"group" }
     ]
   }),
   methods: {
@@ -53,6 +54,7 @@ export default {
       this.$router.push("formember");
     },
     menuClicked: function(it) {
+      console.log(it);
       switch (it["title"]) {
         case "ABOUT": {
           this.goToAbout();
