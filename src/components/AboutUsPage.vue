@@ -10,7 +10,7 @@ div
       v-flex(text-xs-center)
         p.headline.page-headline 各セクションの具体的な活動は？
         p.title.section-title Discussion
-        p.body-2 毎週火・金の放課後（１８時～）に活動しています。💭
+        p.body-2 毎週火・金の放課後（１８時２０分～）に活動しています。💭
         p.body-2 ✅一緒に、英語で話すことに慣れ自分の考えを表現できるようになりましょう！
         p.body-2 ESSでは、他大学が主催するディスカッション大会にも参加しており、月に数回、休日を利用して首都圏各地の他大学キャンパスにて、合同で英語を話すイベントです。毎年7月には私たち主催の「理科大ディスカッション」もあります。
         p.body-2 この大会では基本的に他大の人と英語で会話するため、日常的に英語で会話を行っておかないと大変です。そのため、普段の部会では少人数のグループにわけて（１テーブル５，６人）ディスカッションの練習をしています。　
@@ -34,27 +34,25 @@ div
         p.body-2 後期に部全体で協力し、11月末の大学の文化祭に向けての練習に励みます。主役級につくのは新入生が主ですが、仕事は役者以外にも衣装や小道具などの裏方もあり、それに精を出す人も沢山います。
 </template>
 <script>
-import Hero from '../components/PageHero.vue'
+import Hero from "../components/PageHero.vue";
 export default {
   name: "aboutpage",
   components: {
     Hero
   }
-  
 };
 </script>
 <style scoped  lang="scss" >
-#top-title-image{
+#top-title-image {
   width: 100%;
   height: 50vh;
-  background: url(https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat;
-  background-size:cover;
+  background: url(https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+    no-repeat;
+  background-size: cover;
 }
-.section-title{
-  padding-top: 24px; 
-  font-family:  'Montserrat', sans-serif;
+.section-title {
+  padding-top: 24px;
+  font-family: "Montserrat", sans-serif;
   color: #ff9c00;
 }
-
-
 </style>
