@@ -13,6 +13,19 @@ v-app()#app
 <script>
 import Toolbar from "./components/Toolbar.vue";
 import Footer from "./components/Footer.vue";
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+  var config = {
+    apiKey: "AIzaSyCOH6Q88NenF_Qz39XZ2p4VQW4SHGRu3uA",
+    authDomain: "ess-tus.firebaseapp.com",
+    databaseURL: "https://ess-tus.firebaseio.com",
+    projectId: "ess-tus",
+    storageBucket: "ess-tus.appspot.com",
+    messagingSenderId: "57430050889"
+  };
+  firebase.initializeApp(config);
+  var db = firebase.firestore();
+ 
 
 export default {
   name: "app",

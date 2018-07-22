@@ -9,6 +9,7 @@ import Contact from './components/ContactUsPage.vue'
 import ForMember from './components/ForMemberPage.vue'
 import Question from './components/QandAPage.vue'
 import Foreigner from './components/ForVisitors.vue'
+import Divpage from './components/DivisionGenPage.vue'
 Vue.use(Vuetify,{
   theme: {
     primary:"#FF9800",
@@ -26,6 +27,7 @@ const routes = [
   { path: '/contact', component:Contact },
   { path: '/question', component:Question},
   { path: '/WelcomeToJapan', component:Foreigner},
+  { path: '/division', component:Divpage},
   { path: '*', component:Home }
 ]
 

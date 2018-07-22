@@ -6,7 +6,7 @@
       v-list-tile(v-for="item in items" :key="item.title" @click="menuClicked(item)")
         v-list-tile-title {{ item.title }}
         v-icon {{ item.icon }}
-  v-toolbar-titleds
+  v-toolbar-title
     span(@click="goHome" ) NODA ESS
   v-toolbar-items.hidden-sm-and-down
     v-btn(flat @click="goToAbout") About
@@ -54,7 +54,6 @@ export default {
       this.$router.push("formember");
     },
     menuClicked: function(it) {
-      console.log(it);
       switch (it["title"]) {
         case "ABOUT": {
           this.goToAbout();
