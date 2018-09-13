@@ -20,7 +20,20 @@ div
         p.body-2 ✅一緒に、論理的に考え相手を説得できるようになりましょう！
         p.body-2 ディベートとは、ある論題について肯定側、否定側に分かれ、それぞれのチームが、自分達の立場の正当性を競って、議論するというものです。
         p.body-2 ちゃんとジャッジもいて、ディベート終了後に、どちらのチームの正当性が高かったか、どちらの主張に説得力があったかによって勝敗を決します！
-        p.body-2 ディベートをする事によって、英語力はもちろん、ジャッジを説得するための論理的な思考力が養われます。
+        p.body-2 ディベートをする事によって、英語力はもちろん、ジャッジを説得するための論理的な思考力が養われます
+        v-layout
+          v-flex(xs12 sm6 offset-sm3)
+            v-card
+              img.white--text(height="200px" src="sample.JPG")
+              v-container(fill-height fluid)
+                  v-layout(fill-height)
+                    v-flex(xs12 align-end flexbox)
+                      span.headline Ryoga Shinotsuka(志の輔)
+              v-card-title
+                div
+                  span ESS随一の巨顔、身体は大きいがメンタルは脆い。とある外大のディスカッションチーフに振られた男。
+              v-card-actions
+                v-btn(flat color="orange") いいね！         
         p.title.section-title Speech
         p.body-2 週１回、木に活動しています。🎙️
         p.body-2 ✅一緒に、英語でわかりやすく惹きつけるスピーチができるようになりましょう！
