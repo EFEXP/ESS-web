@@ -2,7 +2,7 @@
 v-container
    h1.display-2 メンバー用 
    h3.display-1 ツール
-   v-btn.flat(@click="goToDiv") ディビジョン生成  
+  # v-btn.flat(@click="goToDiv") ディビジョン生成  
    h3.display-1 イベント
    div.cal_wrapper
       div.googlecal
@@ -12,12 +12,12 @@ v-container
 <script>
 export default {
   name: "homepage",
-  components: {
-  },
-    methods: {
+  components: {},
+  methods: {
     goToDiv: function() {
       this.$router.push("division");
-    }}
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
