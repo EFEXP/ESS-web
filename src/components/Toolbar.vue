@@ -15,6 +15,8 @@
       v-icon.right question_answer
     v-btn(flat @click="goToContact") Contact
       v-icon.right contact_support
+    v-btn(flat @click="goToGallery") Gallery
+      v-icon.right photo
   v-spacer
   v-btn(icon onclick="window.open('https://twitter.com/tusnodaess')")
     v-icon(size="24px") fab fa-twitter
@@ -31,10 +33,11 @@ export default {
   components: {},
   data: () => ({
     items: [
-      { title: "ABOUT",icon:"info" },
-      { title: "Q & A",icon:"question_answer" },
-      { title: "CONTACT",icon:"contact_support" },
-      { title: "FOR MEMBERS",icon:"group" }
+      { title: "ABOUT", icon: "info" },
+      { title: "Q & A", icon: "question_answer" },
+      { title: "CONTACT", icon: "contact_support" },
+      { title: "GALLERY", icon: "photo" },
+      { title: "FOR MEMBERS", icon: "group" }
     ]
   }),
   methods: {
@@ -45,13 +48,16 @@ export default {
       this.$router.push("/");
     },
     goToQandA: function() {
-      this.$router.push("/question");
+      this.$router.push("question");
     },
     goToContact: function() {
       this.$router.push("contact");
     },
     goToForMember: function() {
       this.$router.push("formember");
+    },
+    goToGallery: function() {
+      this.$router.push("gallery");
     },
     menuClicked: function(it) {
       switch (it["title"]) {
@@ -61,6 +67,14 @@ export default {
         }
         case "CONTACT": {
           this.goToContact();
+          break;
+        }
+        case "Q & A": {
+          this.goToQandA();
+          break;
+        }
+        case "GALLERY": {
+          this.goToGallery();
           break;
         }
         case "Q & A": {
@@ -77,7 +91,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.right{
-  padding-left: 8px
+.right {
+  padding-left: 8px;
 }
 </style>

@@ -1,10 +1,10 @@
 <template lang="pug">
 v-container
-   h1.display-2 メンバー用 
-   h3.display-1 ツール
-  # v-btn.flat(@click="goToDiv") ディビジョン生成  
-   h3.display-1 イベント
-   div.cal_wrapper
+  h1.display-2 メンバー用 
+   // - h3.display-1 ツール
+   // - v-btn.flat(@click="goToDiv") ディビジョン生成 
+  h3.display-1 イベント
+    div.cal_wrapper
       div.googlecal
         <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=llaco7t0qtl2i73cdu0a2kk324%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Asia%2FTokyo"   frameborder="0" scrolling="no"></iframe> 
   

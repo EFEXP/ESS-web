@@ -15,35 +15,32 @@
            v-icon.right card_travel
 </template>
 <script>
-
 export default {
   name: "topbanner",
-  components: {
-  }
+  components: {}
 };
 </script>
 <style  scoped lang="scss" >
-
-#banner-container{
+#banner-container {
   margin: 0 auto;
 }
-#jumbotron-top{
+#jumbotron-top {
   width: 100%;
   height: 100vh;
-  background: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f6e5055d9ad1d603fd364c11823d026&auto=format&fit=crop&w=1952&q=80) no-repeat;
-  background-size:cover;
-  display:flex;
+  background: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f6e5055d9ad1d603fd364c11823d026&auto=format&fit=crop&w=1952&q=80)
+    no-repeat;
+  background-size: cover;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-#banner-flex{
-   align-items: center;
+#banner-flex {
+  align-items: center;
 }
-#our-name{
- font-family:  'Montserrat', sans-serif;
+#our-name {
+  font-family: "Montserrat", sans-serif;
 }
-#our-name-jp{
+#our-name-jp {
   margin-top: 10px;
 }
-
 </style>
