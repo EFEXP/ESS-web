@@ -77,10 +77,6 @@ export default {
           this.goToGallery();
           break;
         }
-        case "Q & A": {
-          this.goToQandA();
-          break;
-        }
         case "FOR MEMBERS": {
           this.goToForMember();
           break;

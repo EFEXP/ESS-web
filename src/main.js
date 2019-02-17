@@ -10,7 +10,8 @@ import Gallery from './components/GalleryPage.vue'
 import ForMember from './components/ForMemberPage.vue'
 import Question from './components/QandAPage.vue'
 import Foreigner from './components/ForVisitors.vue'
-import Divpage from './components/DivisionGenPage.vue'
+import Timeline from './components/YearTimelinePage.vue'
+
 Vue.use(Vuetify, {
   theme: {
     primary: "#FF9800",
@@ -46,12 +47,11 @@ const routes = [{
     component: Foreigner
   },
   {
-    path: '/division',
-    component: Divpage
-  },
-  {
     path: '/gallery',
     component: Gallery
+  }, {
+    path: '/timeline',
+    component: Timeline
   },
   {
     path: '*',

@@ -1,7 +1,7 @@
-module.exports ={
-    configureWebpack:{
-        plugins: [
-        ]
+module.exports = {
+    configureWebpack: {
+        plugins: []
+
     }
-  
+
 }
