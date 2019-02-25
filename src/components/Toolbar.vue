@@ -15,13 +15,11 @@
       v-icon.right question_answer
     v-btn(flat @click="goToContact") Contact
       v-icon.right contact_support
-    v-btn(flat @click="goToGallery") Gallery
-      v-icon.right photo
+    v-btn(flat @click="goToTimeline") Timeline
+      v-icon.right timeline
   v-spacer
-  v-btn(icon onclick="window.open('https://twitter.com/tusnodaess')")
+  v-btn(icon onclick="window.open('https://twitter.com/intent/user?user_id=3087362719')")
     v-icon(size="24px") fab fa-twitter
-  v-btn(icon  onclick="window.open('https://twitter.com/tusshinkan2018')")
-    v-icon(size="24px") fab fa-instagram  
   v-toolbar-items.hidden-sm-and-down  
     v-btn(flat @click="goToForMember") for Members
       v-icon(size="24px") group 
@@ -37,7 +35,8 @@ export default {
       { title: "Q & A", icon: "question_answer" },
       { title: "CONTACT", icon: "contact_support" },
       { title: "GALLERY", icon: "photo" },
-      { title: "FOR MEMBERS", icon: "group" }
+      { title: "FOR MEMBERS", icon: "group" },
+      { title: "TIMELINE", icon: "timeline" }
     ]
   }),
   methods: {
@@ -59,6 +58,9 @@ export default {
     goToGallery: function() {
       this.$router.push("gallery");
     },
+    goToTimeline: function() {
+          this.$router.push("timeline");
+      },
     menuClicked: function(it) {
       switch (it["title"]) {
         case "ABOUT": {
@@ -78,9 +80,13 @@ export default {
           break;
         }
         case "FOR MEMBERS": {
-          this.goToForMember();
-          break;
-        }
+              this.goToForMember();
+              break;
+          }
+        case "TIMELINE": {
+              this.goToTimeline();
+              break;
+          }
       }
     }
   }

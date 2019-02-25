@@ -7,10 +7,10 @@ div
       v-flex(lg1 xs0 )
       v-flex(lg2 xs12 v-for="it of items" :key="it.name" v-on:click="goToAbout")#section
         v-hover
-            v-card.section-card()
-                v-card-media(:src="it.picUrl" height="200px" )
-                v-card-title(primary-title).headline.mb-0 {{it.name}}
-                v-card-text {{it.description}}
+          v-card.section-card()
+             v-card-media(:src="it.picUrl" height="200px" )
+             v-card-title(primary-title).headline.mb-0 {{it.name}}
+             v-card-text {{it.description}}
 </template>
 <script>
 import TopBanner from "../components/TopBanner.vue";
