@@ -3,7 +3,6 @@ v-app()#app
   Toolbar 
   v-content(v-scroll="onScroll")
     v-container(fluid)#margin-zero
-      transition(name="fade")
         router-view
   Footer
   

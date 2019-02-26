@@ -1,12 +1,13 @@
 <template lang="pug">
 div
   Hero(title="Q&A" url="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" subtitle="実際に寄せられた質問です。")
-  v-container(fluid).text-container
-    div(v-for="it of questions" :key="it['q']").question-con
-      span.title.question {{it['q']}}
-      br
-      v-icon(medium) mood
-      span.body-2.answer {{it['a']}}
+  v-container.text-container
+    h1 よくある質問に回答します
+    v-layout(justify-center)
+            v-flex(sm6)
+                v-card(v-for="it of questions" :key="it.q" ).question-con
+                    v-card-title(primary-title).headline Q.{{it.q}}
+                    v-card-text A.{{it.a}}
 </template>
 <script>
 import Hero from "../components/PageHero.vue";
@@ -66,6 +67,6 @@ export default {
 .question {
 }
 .question-con {
-  margin-top: 40px;
+  margin-top: 4px;
 }
 </style>

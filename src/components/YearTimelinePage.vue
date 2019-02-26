@@ -3,7 +3,7 @@
         Hero(title="Timeline" url="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" subtitle="一年の流れを見てみましょう。")
         v-content
             v-container
-                h1 ESSの一年間
+                h1.page-headline ESSの一年間
                 v-timeline(:class="{'v-timeline--dense':$vuetify.breakpoint.mdAndDown}")
                     v-timeline-item(v-for="it in items" :key="it.title" color="red lighten-2" large )
                         span(slot="icon").font-weight-bold.white--text {{it.month}}月

@@ -43,4 +43,9 @@ export default {
 #our-name-jp {
   margin-top: 10px;
 }
+.margin-zero{
+        margin: 0%;
+        padding: 0%;
+    }
+
 </style>
