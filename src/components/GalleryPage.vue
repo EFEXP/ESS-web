@@ -4,7 +4,7 @@ div
   div(class="text-xs-center")
     v-dialog(v-model="dialog" fluid)
       v-card
-        v-img(:src="activeUrl" ) 
+        v-img(:src="activeUrl") 
            
   v-layout
     v-flex(xs12 sm6 offset-sm3)
@@ -12,7 +12,7 @@ div
         v-card-title(primary-title)
             v-flex(no-wrap)
                 v-avatar(size="48px" slot="activator")
-                    img(src="https://pbs.twimg.com/profile_images/1029397628537032704/MR6ciz4f_400x400.jpg")
+                    img(src="https://pbs.twimg.com/profile_images/1016575987335610369/8Qs0qTgR_400x400.jpg")
                 h3.headline.mb-0 Kentaro Maeda
         v-card-text   
             strong ひとこと     

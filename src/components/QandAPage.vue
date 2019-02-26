@@ -1,12 +1,13 @@
 <template lang="pug">
 div
   Hero(title="Q&A" url="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" subtitle="実際に寄せられた質問です。")
-  v-container(fluid).text-container
-    div(v-for="it of questions" :key="it['q']").question-con
-      span.title.question {{it['q']}}
-      br
-      v-icon(medium) mood
-      span.body-2.answer {{it['a']}}
+  v-container.text-container
+    h1 よくある質問に回答します
+    v-layout(justify-center)
+            v-flex(md6)
+                v-card(v-for="it of questions" :key="it.q" ).question-con
+                    v-card-title(primary-title).headline Q.{{it.q}}
+                    v-card-text A.{{it.a}}
 </template>
 <script>
 import Hero from "../components/PageHero.vue";
@@ -31,7 +32,7 @@ export default {
         {
           q: "週に何回活動があるの？",
           a:
-            "基本的に部会は毎日開かれています✨曜日によって活動は異なります、毎日必ず出ないといけないというわけではありません。"
+            "基本的に部会は毎日開かれています✨曜日によって活動は異なります、毎日必ず出ないといけないというわけではありません。行きたい日に自由に参加できるのもESSの魅力の一つです！"
         },
         {
           q: "部員数はどれくらいですか？",
@@ -66,6 +67,6 @@ export default {
 .question {
 }
 .question-con {
-  margin-top: 40px;
+  margin-top: 4px;
 }
 </style>
