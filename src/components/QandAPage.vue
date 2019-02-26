@@ -4,7 +4,7 @@ div
   v-container.text-container
     h1 よくある質問に回答します
     v-layout(justify-center)
-            v-flex(sm6)
+            v-flex(md6)
                 v-card(v-for="it of questions" :key="it.q" ).question-con
                     v-card-title(primary-title).headline Q.{{it.q}}
                     v-card-text A.{{it.a}}

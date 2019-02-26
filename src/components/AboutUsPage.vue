@@ -4,12 +4,12 @@ div
   v-container
     h1.page-headline どういう団体なの？
     v-layout(justify-center)
-        v-flex(sm6)
+        v-flex(md6)
             v-card
                 v-card-text 私たちは、東京理科大学の公認団体、野田文化局に属する「英語研究会」通称『ＥＳＳ(English Speaking Society)』です😁。活動の円滑化のため、Discussion,Debate,Speech,Guide,Drama 5つのセクションに分かれています。一つに集中して参加することも、何個もの活動に励むことも可能です。
             h1.page-headline 各セクションの具体的な活動は？
             v-card(v-for="it of sections" :key="it.title").section-con
-                v-card-title.title.section-title {{it.title}}
+                v-card-title.headline.section-title {{it.title}}
                 v-card-text.body-2 {{it.text}}
 
 </template>
