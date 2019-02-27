@@ -80,7 +80,7 @@
                         month:10,
                         title:"PPA",
                         text:"今回は新入生に現役生のサポートがつかず、また新入生&現役生の分け隔てなく、スピーチで競ってもらうバトルロワイヤルだ！🔥毎年、最高の盛り上がりを見せているこの大会で今年はどんなスピーチが聴けるのか！？😋今年一番アツイ戦いがここにある！🔜",
-                        picture: "https://lh3.googleusercontent.com/3pNnUYAll2CeNipD_JJrU4IDTD_pOik-yOyn9h13JgyJ_TzixWzxs1fQluYZB3AUZACkSj3PEmsK1LU2PMEjiKEsuozPJzVnT_H1ULzsZW6gZ_FfFLASj6g2MbnX0umoA-GOpQ8uEBbnx1jbPzytgmX-9vnbdbfV7UHOrrp6TOsHdDn_bDuAPGRBCC4Q6DA3lVQJGw-0HPHIaxF0A8pwM9ipNC4KLZEhavRF7XmHCvHivibMmRc-ijqvNucN7Bs4K85JVjdtHNIHEddEXxvRC11tyIG_bNcIcxJ9i-_f1IogpwM33eEu62GMGGSwgb8heR31Okk6QxmPdlY1eYNLb_sRbGtRqnXqffXTt73ZqfJbcM_b7LIKT6x9Fvzp_H1HjXDD-CatimQwzxs5mydI0cMKZ_4XtG3S5HXCLqQtoVV7j5UEkaEqbTdNl67TYbq7x5rlJgv-9RTCxZna-JyiM33Ws08W7ophzM2Pqqh9cS0_sVwZIV_PyQko2Xh8mw8lUq-X6wKT9RMIT6tWxpifyY2ox6M-97-RnbjTL9r2PsTon9SYkJW_BddXXKM76_g90jw2Q8ACIhrRhz75hkYNdqV6DQhR4Q3EpoFkiCRePi5FWeEzJprXB7SpSErj4Y4fJ17A8flwGnsuNJHOqQ_GfSRYeSiKdAk=w1471-h979-no",
+                        picture: "./img/speech/PPA/1.jpg",
                         summary:"今回は新入生&現役生の分け隔てなく、スピーチで競ってもらうバトルロワイヤル！"
 
                     },

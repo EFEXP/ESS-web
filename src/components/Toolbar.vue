@@ -20,9 +20,7 @@
   v-spacer
   v-btn(icon onclick="window.open('https://twitter.com/intent/user?user_id=3087362719')")
     v-icon(size="24px") fab fa-twitter
-  v-toolbar-items.hidden-sm-and-down  
-    v-btn(flat @click="goToForMember") for Members
-      v-icon(size="24px") group 
+  <!-- v-toolbar-items.hidden-sm-and-down v-btn(flat @click="goToForMember") for Members v-icon(size="24px") group -->
     
 </template>
 <script>
@@ -34,8 +32,7 @@ export default {
       { title: "ABOUT", icon: "info" },
       { title: "Q & A", icon: "question_answer" },
       { title: "CONTACT", icon: "contact_support" },
-      { title: "GALLERY", icon: "photo" },
-      { title: "FOR MEMBERS", icon: "group" },
+    //  { title: "FOR MEMBERS", icon: "group" },
       { title: "TIMELINE", icon: "timeline" }
     ]
   }),
