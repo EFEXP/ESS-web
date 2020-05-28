@@ -1,10 +1,11 @@
 <template lang="pug">
-  v-jumbotron(:src="url" :gradient="gradient"  dark)#root-tron
-    v-container(fill-height)
-      v-layout(align-center)
-        v-flex(text-xs-center)
-          h3.display-3.page-title  {{title}}
-          h3.display-1 {{subtitle}}
+  div
+       v-img(:src="url" :gradient="gradient"  dark height="400px" ).d-flex.align-center
+           h3.display-3.page-title  {{title}}
+               h3.display-1.white--text {{subtitle}}
+
+
+
 </template>
 <script>
 export default {
@@ -19,7 +20,4 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-#root-tron{
-  display: block;
-}
 </style>

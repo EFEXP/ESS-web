@@ -4,8 +4,8 @@ div
   div(class="text-xs-center")
     v-dialog(v-model="dialog" fluid)
       v-card
-        v-img(:src="activeUrl") 
-           
+        v-img(:src="activeUrl")
+
   v-layout
     v-flex(xs12 sm6 offset-sm3)
       v-card
@@ -14,8 +14,8 @@ div
                 v-avatar(size="48px" slot="activator")
                     img(src="https://pbs.twimg.com/profile_images/1016575987335610369/8Qs0qTgR_400x400.jpg")
                 h3.headline.mb-0 Kentaro Maeda
-        v-card-text   
-            strong ひとこと     
+        v-card-text
+            strong ひとこと
             p 下の人何いってんだ
         v-container(grid-list-sm fluid)
           v-layout(row wrap)
@@ -30,8 +30,8 @@ div
                 v-avatar(size="48px" slot="activator")
                     img(src="https://pbs.twimg.com/profile_images/1014363132477636609/dGWNQ8tl_400x400.jpg")
                 h3.headline.mb-0 Kyohei Katada
-          v-card-text   
-            strong ひとこと     
+          v-card-text
+            strong ひとこと
             p 花火が見えない？お前が居るから大丈夫👌
           v-container(grid-list-sm fluid)
            v-layout(row wrap)
@@ -39,7 +39,7 @@ div
               v-card(flat tile class="d-flex")
                 v-img(:src="`./img/kat/${n}.jpg`"  :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"  aspect-ratio="1" class="grey lighten-2" @click="activeUrl=`./img/kat/${n}.jpg`;clickPicture();")
                     v-layout(slot="placeholder" fill-height align-center justify-center ma-0)
-                        v-progress-circular(indeterminate color="grey lighten-5")                  
+                        v-progress-circular(indeterminate color="grey lighten-5")
 </template>
 <script>
 import Hero from "../components/PageHero.vue";
@@ -56,8 +56,7 @@ export default {
     };
   },
   methods: {
-    clickPicture: function(event) {
-      console.log(this.activeUrl);
+    clickPicture: function() {
       this.dialog = true;
     }
   }

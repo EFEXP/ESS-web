@@ -1,18 +1,16 @@
 <template lang="pug">
   div#jumbotron-top
      div#banner-container
-        h3.display-3.white--text#our-name 
-          |English 
-          span
-          |Speaking 
-          span
+        h3.display-3.white--text#our-name
+          |English
+          br
+          |Speaking
+          br
           |Society
         h3.display-1#our-name-jp.white--text
-          |東 京 理 科 大 学 
+          |東京理科大学
           span
-          | 英 語 研 究 会 
-        v-btn.primary.primary--text(large outline to="WelcomeToJapan") For English speakers
-           v-icon.right card_travel
+          |英語研究会
 </template>
 <script>
 export default {

@@ -1,13 +1,16 @@
 <template lang="pug">
 v-app()#app
-  Toolbar 
+  Toolbar
   v-content(v-scroll="onScroll")
     v-container(fluid)#margin-zero
-        router-view
-  Footer
-  
-    
-   
+    router-view
+  v-footer(app padless)
+      v-card(flat tile)#footer-root.primary
+            v-card-actions.justify-center    &copy;{{ new Date().getFullYear() }} —
+                strong TUS English Speaking Society
+
+
+
 </template>
 <script>
 import Toolbar from "./components/Toolbar.vue";
@@ -23,8 +26,8 @@ import 'firebase/firestore';
     messagingSenderId: "57430050889"
   };
   firebase.initializeApp(config);
-  var db = firebase.firestore();
- 
+  firebase.firestore();
+
 
 export default {
   name: "app",
@@ -34,10 +37,11 @@ export default {
 
   },
    data: () => ({
+       icons: [ 'fab fa-twitter',  'fab fa-instagram'],
       offsetTop: 0
     }),
     methods: {
-      onScroll (e) {
+      onScroll () {
         this.offsetTop = window.pageYOffset || document.documentElement.scrollTop
       }
     }
@@ -45,6 +49,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #app {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ Pro", Hiragino Kaku Gothic Pro, "Yu Gothic", YuGothic, Arial, "メイリオ", Meiryo, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,23 +60,10 @@ export default {
     color: #323232;
     text-align: center;
 }
-Footer{
-  padding-top: 0px;
-}
-::-webkit-selection {
-  background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
+#footer-root{
+    width: 100%;
 }
 
-::-moz-selection {
-  background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
-}
-
-::selection, {
-  background-color: #CCE2FF;
-  color: rgba(0, 0, 0, 0.87);
-}
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .4s;
@@ -79,12 +71,7 @@ Footer{
 .fade-enter, .fade-leave-to  {
   opacity: 0;
 }
-input,textarea{
-  ::selection,::-moz-selection,::-webkit-selection {
-      background-color: rgba(100, 100, 100, 0.4);
-      color: rgba(0, 0, 0, 0.87);
-  }
-}
+
 .page-title{
  font-family:  'Montserrat', sans-serif;
  color: #ff9c00;

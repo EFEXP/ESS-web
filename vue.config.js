@@ -3,6 +3,6 @@ module.exports = {
         plugins: []
 
     },
-    publicPath: '/ess'
-
+    lintOnSave: false,
+    publicPath: '/ess',
 }

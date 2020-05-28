@@ -8,22 +8,30 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "firebase": "^5.8.3",
-    "npm": "^6.8.0",
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@vue/cli-plugin-eslint": "^4.4.1",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.5",
+    "eslint-plugin-vue": "^6.2.2",
+    "firebase": "^7.14.5",
+    "npm": "^6.14.5",
     "pug-plain-loader": "^1.0.0",
-    "vue": "^2.6.6",
-    "vue-router": "^3.0.2",
-    "vuetify": "^1.5.1"
+    "router": "^1.3.5",
+    "sass": "^1.26.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuetify": "^2.2.30"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
-    "node-sass": "^4.11.0",
+    "@vue/cli-plugin-babel": "^4.4.1",
+    "@vue/cli-service": "^4.4.1",
+    "axios": "^0.18.0",
+    "eslint": "^4.19.1",
     "pug-html-loader": "^1.1.5",
-    "sass-loader": "^6.0.7",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "vue-template-compiler": "^2.6.6"
+    "sass-loader": "^8.0.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-cli-plugin-axios": "^0.0.4",
+    "vue-template-compiler": "^2.6.11"
   },
   "babel": {
     "presets": [
@@ -35,7 +43,21 @@
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"
-    ]
+    ],
+    "rules": {
+      "vue/no-async-in-computed-properties": "warn",
+      "vue/no-dupe-keys": "warn",
+      "vue/no-duplicate-attributes": "warn",
+      "vue/no-parsing-error": "warn",
+      "vue/no-reserved-keys": "warn",
+      "vue/no-shared-component-data": "warn",
+      "vue/no-side-effects-in-computed-properties": "warn",
+      "vue/no-template-key": "warn",
+      "vue/no-textarea-mustache": "off",
+      "vue/no-unused-components": "warn",
+      "vue/no-unused-vars": "warn",
+      "vue/return-in-computed-property": "warn"
+    }
   },
   "postcss": {
     "plugins": {
