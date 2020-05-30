@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const header={
     "Content-Type": "application/json",
-    "X-API-KEY": 'c417a40e-5c06-4903-88a2-cc5af6228e8f'
+    "X-API-KEY": process.env.VUE_APP_KEY
 }
 
 
