@@ -1,11 +1,10 @@
 <template lang="pug">
-v-app()#app
+v-app#app
   Toolbar
   v-content(v-scroll="onScroll")
     v-container(fluid)#margin-zero
     router-view
   v-footer(app padless)
-      v-btn(@click="goToMembers") hello
       v-card(flat tile)#footer-root.primary
             v-card-actions.justify-center    &copy;{{ new Date().getFullYear() }} —
                 strong TUS English Speaking Society
@@ -15,18 +14,6 @@ v-app()#app
 </template>
 <script>
 import Toolbar from "./components/Toolbar.vue";
-import * as firebase from "firebase/app";
-import "firebase/auth";
-  var config = {
-    apiKey: "AIzaSyCOH6Q88NenF_Qz39XZ2p4VQW4SHGRu3uA",
-    authDomain: "ess-tus.firebaseapp.com",
-    databaseURL: "https://ess-tus.firebaseio.com",
-    projectId: "ess-tus",
-    storageBucket: "ess-tus.appspot.com",
-    messagingSenderId: "57430050889"
-  };
-  firebase.initializeApp(config);
-  firebase.auth();
 
 
 export default {
