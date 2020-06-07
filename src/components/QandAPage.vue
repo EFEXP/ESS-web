@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  Hero(title="Q&A" url="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" subtitle="実際に寄せられた質問です。")
+  Hero(title="Q&A"  subtitle="実際に寄せられた質問です。")
   v-container.text-container
     h1 よくある質問に回答します
     v-container(v-if="items")

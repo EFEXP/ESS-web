@@ -13,7 +13,6 @@ export function getMethod(callback,entryPoint) {
     }).then((res)=>{
         callback(res)
     })
-
 }
 
 

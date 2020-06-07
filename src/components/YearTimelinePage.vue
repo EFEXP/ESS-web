@@ -1,6 +1,6 @@
 <template lang="pug">
     div
-        Hero(title="Timeline" url="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" subtitle="一年の流れを見てみましょう。")
+        Hero(title="Timeline" subtitle="一年の流れを見てみましょう。")
         v-content
             v-container
                 h1.page-headline ESSの一年間
@@ -11,7 +11,6 @@
                             v-img(v-if='it["picture"]' :src='it["picture"]["url"]')
                             v-card-title(primary-title).headline {{it.name}}
                             v-card-text.body-1  {{it.description}}
-                            //v-card-text.hidden-md-and-up  {{it.text}}
 
 </template>
 

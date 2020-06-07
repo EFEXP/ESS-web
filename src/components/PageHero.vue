@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-       v-img(:src="url" :gradient="gradient"  dark height="400px" ).d-flex.align-center
+       v-img(src="./static/pagetop.jpg" :gradient="gradient"  dark height="400px" ).d-flex.align-center
            h3.display-3.page-title  {{title}}
                h3.display-1.white--text {{subtitle}}
 

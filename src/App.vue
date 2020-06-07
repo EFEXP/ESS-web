@@ -5,6 +5,7 @@ v-app()#app
     v-container(fluid)#margin-zero
     router-view
   v-footer(app padless)
+      v-btn(@click="goToMembers") hello
       v-card(flat tile)#footer-root.primary
             v-card-actions.justify-center    &copy;{{ new Date().getFullYear() }} —
                 strong TUS English Speaking Society
@@ -14,9 +15,8 @@ v-app()#app
 </template>
 <script>
 import Toolbar from "./components/Toolbar.vue";
-import Footer from "./components/Footer.vue";
-import firebase from 'firebase/app';
-import 'firebase/firestore';
+import * as firebase from "firebase/app";
+import "firebase/auth";
   var config = {
     apiKey: "AIzaSyCOH6Q88NenF_Qz39XZ2p4VQW4SHGRu3uA",
     authDomain: "ess-tus.firebaseapp.com",
@@ -26,14 +26,13 @@ import 'firebase/firestore';
     messagingSenderId: "57430050889"
   };
   firebase.initializeApp(config);
-  firebase.firestore();
+  firebase.auth();
 
 
 export default {
   name: "app",
   components: {
     Toolbar,
-    Footer
 
   },
    data: () => ({
@@ -41,6 +40,9 @@ export default {
       offsetTop: 0
     }),
     methods: {
+        goToMembers: function() {
+            this.$router.push("members");
+        },
       onScroll () {
         this.offsetTop = window.pageYOffset || document.documentElement.scrollTop
       }
@@ -116,8 +118,8 @@ export default {
   }
 }
 #margin-zero{
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
 }
 
 </style>

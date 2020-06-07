@@ -4,7 +4,7 @@ import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
 import 'vuetify/dist/vuetify.min.css'
-Vue.config.productionTip = true
+Vue.config.productionTip =false
 
 
 

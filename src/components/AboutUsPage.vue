@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  Hero(title="About ESS" url="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" subtitle="私達の活動を紹介します")
+  Hero(title="About ESS" subtitle="私達の活動を紹介します")
   v-container
     h1.page-headline どういう団体なの？
     v-row(justify="center" ).ma-4
